@@ -727,7 +727,9 @@ By utilising the most advanced cutting-edge technology in electronics, data proc
                   <p>
                     Call: (021) 2931 9386<br>
                     <span>Monday-Friday (8am-6pm)</span>
-                  </p>
+					 
+					<!-- <div class="text-center"> <a href="https://api.whatsapp.com/send?phone=6282390171448&text=Halo%20mau%20order%20gan" target="_blank"/>Whatsapp</div> -->
+				 </p>
                 </div>
               </div>
             </div>
@@ -769,25 +771,21 @@ By utilising the most advanced cutting-edge technology in electronics, data proc
             <!-- Start  contact -->
             <div class="col-md-6">
               <div class="form contact-form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form method="POST" action="sendmail.php">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <input type="text" name="nama" class="form-control"  placeholder="Your Name" required>
                   </div>
                   <div class="form-group mt-3">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                   </div>
                   <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    <input type="text" class="form-control" name="subjek" placeholder="Subject" required>
                   </div>
                   <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    <textarea class="form-control" name="pesan" rows="5" placeholder="Message" required></textarea>
                   </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
+				  <td><input type="submit" name="kirim" value="Send Message!"></td>
+                  
                 </form>
               </div>
             </div>
